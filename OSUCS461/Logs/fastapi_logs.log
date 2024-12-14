@@ -1,0 +1,116 @@
+2024-12-13 23:02:45,013 - fastAPI - INFO - HP-API - local - Incoming request: GET http://127.0.0.1:8855/.
+2024-12-13 23:02:45,013 - fastAPI - INFO - HP-API - local - Handling function: unknown
+2024-12-13 23:02:45,013 - fastAPI - INFO - HP-API - local - Completed request in 0.0003 seconds
+2024-12-13 23:02:45,013 - fastAPI - INFO - HP-API - local - Response status code: 404
+2024-12-13 23:02:45,114 - fastAPI - INFO - HP-API - local - Incoming request: GET http://127.0.0.1:8855/favicon.ico.
+2024-12-13 23:02:45,114 - fastAPI - INFO - HP-API - local - Handling function: unknown
+2024-12-13 23:02:45,114 - fastAPI - INFO - HP-API - local - Completed request in 0.0002 seconds
+2024-12-13 23:02:45,114 - fastAPI - INFO - HP-API - local - Response status code: 404
+2024-12-13 23:03:42,145 - fastAPI - INFO - HP-API - local - Incoming request: GET http://127.0.0.1:8855/docs.
+2024-12-13 23:03:42,146 - fastAPI - INFO - HP-API - local - Handling function: swagger_ui_html
+2024-12-13 23:03:42,147 - fastAPI - INFO - HP-API - local - Completed request in 0.0006 seconds
+2024-12-13 23:03:42,147 - fastAPI - INFO - HP-API - local - Response status code: 200
+2024-12-13 23:03:42,498 - fastAPI - INFO - HP-API - local - Incoming request: GET http://127.0.0.1:8855/openapi.json.
+2024-12-13 23:03:42,499 - fastAPI - INFO - HP-API - local - Handling function: openapi
+2024-12-13 23:03:42,507 - fastAPI - INFO - HP-API - local - Completed request in 0.0081 seconds
+2024-12-13 23:03:42,507 - fastAPI - INFO - HP-API - local - Response status code: 200
+2024-12-13 23:04:28,931 - fastAPI - INFO - HP-API - local - Incoming request: POST http://127.0.0.1:8855/users.
+2024-12-13 23:04:28,931 - fastAPI - INFO - HP-API - local - Handling function: create_user
+2024-12-13 23:04:28,952 - fastAPI - INFO - HP-API - local - Completed request in 0.0205 seconds
+2024-12-13 23:04:28,952 - fastAPI - INFO - HP-API - local - Response status code: 400
+2024-12-13 23:04:30,505 - fastAPI - INFO - HP-API - local - Incoming request: POST http://127.0.0.1:8855/users.
+2024-12-13 23:04:30,505 - fastAPI - INFO - HP-API - local - Handling function: create_user
+2024-12-13 23:04:30,509 - fastAPI - INFO - HP-API - local - Completed request in 0.0035 seconds
+2024-12-13 23:04:30,509 - fastAPI - INFO - HP-API - local - Response status code: 400
+2024-12-13 23:04:33,150 - fastAPI - INFO - HP-API - local - Incoming request: POST http://127.0.0.1:8855/users.
+2024-12-13 23:04:33,150 - fastAPI - INFO - HP-API - local - Handling function: create_user
+2024-12-13 23:04:33,153 - fastAPI - INFO - HP-API - local - Completed request in 0.0027 seconds
+2024-12-13 23:04:33,153 - fastAPI - INFO - HP-API - local - Response status code: 400
+2024-12-13 23:04:40,682 - fastAPI - INFO - HP-API - local - Incoming request: POST http://127.0.0.1:8855/users.
+2024-12-13 23:04:40,683 - fastAPI - INFO - HP-API - local - Handling function: create_user
+2024-12-13 23:04:40,686 - fastAPI - INFO - HP-API - local - Completed request in 0.0029 seconds
+2024-12-13 23:04:40,686 - fastAPI - INFO - HP-API - local - Response status code: 400
+2024-12-13 23:06:06,545 - fastAPI - INFO - HP-API - local - Incoming request: POST http://127.0.0.1:8855/users.
+2024-12-13 23:06:06,546 - fastAPI - INFO - HP-API - local - Handling function: create_user
+2024-12-13 23:06:06,549 - fastAPI - INFO - HP-API - local - Completed request in 0.0032 seconds
+2024-12-13 23:06:06,549 - fastAPI - INFO - HP-API - local - Response status code: 400
+2024-12-13 23:06:14,714 - fastAPI - INFO - HP-API - local - Incoming request: GET http://127.0.0.1:8855/users.
+2024-12-13 23:06:14,714 - fastAPI - INFO - HP-API - local - Handling function: get_users
+2024-12-13 23:06:14,730 - fastAPI - ERROR - HP-API - local - Error processing request. Request was handled by: get_users 
+Method: GET - URL: http://127.0.0.1:8855/users - Headers: Headers({'host': '127.0.0.1:8855', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"macOS"', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'accept': 'application/json', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'sec-ch-ua-mobile': '?0', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8855/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-US,en;q=0.9'}) 
+Stack Trace: You must set the config attribute `from_attributes=True` to use from_orm
+Traceback (most recent call last):
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/anyio/streams/memory.py", line 111, in receive
+    return self.receive_nowait()
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/anyio/streams/memory.py", line 106, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/anyio/streams/memory.py", line 124, in receive
+    return receiver.item
+AttributeError: 'MemoryObjectItemReceiver' object has no attribute 'item'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 157, in call_next
+    message = await recv_stream.receive()
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/anyio/streams/memory.py", line 126, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/OSUCS461/main.py", line 32, in dispatch
+    response = await call_next(request)
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 163, in call_next
+    raise app_exc
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/starlette/middleware/base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/starlette/concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2505, in run_sync_in_worker_thread
+    return await future
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 1005, in run
+    result = context.run(func, *args)
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/OSUCS461/Routers/v1.py", line 19, in get_users
+    return User.get_users()
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/OSUCS461/Classes/Database/logic.py", line 52, in get_users
+    return [UserReadModel.from_orm(user) for user in users]
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/OSUCS461/Classes/Database/logic.py", line 52, in <listcomp>
+    return [UserReadModel.from_orm(user) for user in users]
+  File "/Users/School/Downloads/OSUCS461-ExitTicket-main/.venv/lib/python3.9/site-packages/pydantic/main.py", line 1325, in from_orm
+    raise PydanticUserError(
+pydantic.errors.PydanticUserError: You must set the config attribute `from_attributes=True` to use from_orm
+
+2024-12-13 23:06:14,731 - fastAPI - INFO - HP-API - local - Completed request in 0.0162 seconds
